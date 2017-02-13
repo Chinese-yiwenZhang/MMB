@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>moneyctrl</title>
+	<script src="lib/fixScreen.js"></script>
+	<script src="lib/template.js"></script>
+	<script src="lib/jquery/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/moneyctrl.css">
+</head>
+<body>
+	<!-- 头部区域 -->
+	<div class="header">
+		<a href="index.html" class="fl">&lt;</a>
+		<p class="fl">省钱控-最新优惠</p>
+		<img src="images/header_app.png" class="fr" style="height: 20px;">
+	</div>
+	<!-- 内容区域 -->
+	<div class="productlist"></div>
+	<!-- 底部区域 -->
+	<div class="footer">
+		<div class="row">
+			<div><a href="#">登录</a></div>
+			<div><a href="#">注册</a></div>
+			<div><a href="#">返回顶部</a></div>
+		</div>
+		<p><a href="#">手机APP下载</a><a href="#">慢慢买手机版---掌上比价平台</a></p>
+		<p>m.manmanbuy.com</p>
+	</div>
+	<script type="text/html" id="moneyctrlTmp">
+		<div class="productlist_list">
+		{{each result as value i}}
+		<div class="media">
+				<div class="left fl">{{#value.productImgSm}}</div>
+				<div class="right fl"><p><a href="moneyproduct.html?productid={{value.productId}}">{{value.productName}}</a></p><p>{{value.productPinkage}}</p><span>{{value.productFrom}}</span><span>{{value.productTime}}</span><span class="fr">{{value.productComCount}}</span></div>
+		</div>
+		{{/each}}		
+		</div>
+		<div class="productlist_footer">		
+			<a href="#" class="one">上一页</a>
+			<select class="two">				
+			</select>
+			<a class="three">下一页</a>			
+		</div>
+	</script>
+	<script src="js/moneyctrl.js"></script>
+</body>
+</html>

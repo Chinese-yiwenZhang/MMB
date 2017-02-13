@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inlanddiscount</title>
+	<script src="lib/fixScreen.js"></script>
+	<script src="lib/template.js"></script>
+	<script src="lib/jquery/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/inlanddiscount.css">
+</head>
+<body>
+	<!-- 头部区域 -->
+	<div class="header">
+		<img src="images/header_logo.png" class="fl">
+		<img src="images/header_app.png" class="fr">
+	</div>
+	<!-- 内容区域 -->
+	<div class="product clearfix">
+		<!-- <div class="media">
+			<a href="#">
+				<img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="西域美农新疆特产五星和田红枣250g*2">
+				<p>西域美农新疆特产五星和田红枣250g*2</p>
+				<p>19.8元(5件99元)</p>
+				<span>京东商城 </span>|<span>10-22 13:28</span>
+			</a>
+		</div> -->
+	</div>
+	<!-- 底部区域 -->
+	<div class="footer">
+		<div class="row">
+			<div><a href="#">登录</a></div>
+			<div><a href="#">注册</a></div>
+			<div><a href="#">返回顶部</a></div>
+		</div>
+		<p><a href="#">手机APP下载</a><a href="#">慢慢买手机版---掌上比价平台</a></p>
+		<p>m.manmanbuy.com</p>
+	</div>
+	<script type="text/html" id="inlanddiscountTmp">
+		{{each result as value i}}
+		<div class="media clearfix">
+			<a href="moneyproduct.html?productid={{value.productId}}">
+				<div class="media_info">
+					{{#value.productImg}}
+					<p>{{value.productName}}</p>
+					<p>{{value.productPrice}}</p>
+					<span>{{value.productFrom}}</span>|<span>{{value.productTime}}</span>
+				</div>
+			</a>
+		</div>
+		{{/each}}
+	</script>
+	<script src="js/inlanddiscount.js"></script>
+</body>
+</html>

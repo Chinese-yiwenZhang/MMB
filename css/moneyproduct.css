@@ -1,0 +1,86 @@
+.header a{
+	color:white;
+	margin-left: 5%;
+	font:bold 18px/50px "微软雅黑";
+}
+.header p{
+	margin-left: 35%;
+	color:white;
+	font:bold 16px/50px "微软雅黑";
+}
+.comment_title p{
+	font:bold 16px "微软雅黑";
+	margin:20px 0px 20px 10px;
+}
+.comment_title span{
+	display:inline-block;
+	margin-left: 10px;
+	color:#9FB3D4;
+}
+.comment_si p{
+	width: 50%;
+	font:14px "微软雅黑";
+	margin:10px;
+}
+.comment_si img{
+	width: 120px;
+	height: 120px;
+	margin:10px;
+}
+.comment_bi p{
+	font:14px "微软雅黑";
+	margin:10px;
+}
+.comment_bi img{
+	display:block;
+	margin:0 auto;
+}
+.comment_city li{
+	border-bottom: 1px solid #D6D6D6;
+}
+.comment_city li span{
+	margin: 10px;
+}
+.comment_city li strong{
+	position:absolute;
+	right:10px;
+	color:orange;
+}
+.comment_city button{
+	display:block;
+	width: 80%;
+	margin:10px auto;
+	background-color: #FF9000;
+}
+.comment_city button a{
+	display:inline-block;
+	color:white;
+	width: 100%;
+}
+.cu-content-pl .tit{
+	margin: 10px;
+}
+.cu-content-pl .form textarea{
+	width: 80%;
+	display:block;
+	margin:0 auto;
+}
+.cu-content-pl .ctrl input{
+	width: 80%;
+	display:block;
+	margin:0 auto;
+}
+
+.cu-content-pl .list .userimg{
+	float:left;
+}
+.cu-content-pl .list .userimg img{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 10px;
+}
+.cu-content-pl .list .content{
+	margin-left: 18%;
+	margin-bottom: 20px;
+}

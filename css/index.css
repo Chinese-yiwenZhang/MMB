@@ -1,0 +1,105 @@
+body{
+	background-color: #F5F5F5;
+}
+
+/* menu begin */
+.menu{
+	
+	background-color: white;
+	margin-top: 7px;
+}
+.menu ul{
+	height: 100%;
+}
+.menu li{
+	float:left;
+	width: 25%;
+	height: 32%;
+}
+.menu a{
+	display:inline-block;
+	width: 100%;
+	height: 100%;
+}
+.menu a img{
+	display:block;
+	width : 30px;
+	height: 30px;
+	margin:5px auto;
+}
+.menu a p{
+	text-align:center;
+	font:14px "微软雅黑";
+}
+/* menu end */
+/* recommen begin */
+.recommen{
+	
+	background-color: white;
+	margin-top: 7px;
+}
+.recommen_title{
+	height: 20px;
+	background-color: #FF841D;
+}
+.recommen_title h5{
+	color:white;
+	font:12px/20px "微软雅黑";
+	margin-left: 10px;
+	float:left;
+}
+.recommen_title img{
+	width: 12px;
+	height: 12px;
+	margin: 4px;
+}
+.recommen_list{
+	
+	margin-top: 7px;
+}
+.recommen_list .media{
+	height: 90px;
+	border-bottom: 1px solid #CCC;
+	box-sizing: border-box;
+}
+.media_a{
+	width: 20%;
+	height: 80px;
+	margin-left: 5px;
+}
+.media_a img{
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+}
+.media_inf{
+	width:75%;
+	height: 90px;
+}
+.media_inf p{
+	font:14px "微软雅黑";
+	margin-top: 10px;
+}
+.media_inf .color{
+	color:red;
+}
+.media_inf span{
+	display:block;
+	font:12px "微软雅黑";
+	color:#666;
+	margin-top:10px;
+}
+.recommen_more{
+	height: 25px;
+	margin-top: 7px;
+}
+.recommen_more a{
+	display:block;
+	width: 90%;
+	margin:0 auto;
+	border-radius:5px;
+	border:1px solid #CCC;
+	text-align: center;
+	font:12px "微软雅黑";
+}
+/* recommen end */

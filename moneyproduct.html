@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>moneyproduct</title>
+	<script src="lib/fixScreen.js"></script>
+	<script src="lib/template.js"></script>
+	<script src="lib/jquery/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/moneyproduct.css">
+</head>
+<body>
+	<!-- 头部区域 -->
+	<div class="header">
+		<a href="index.html" class="fl">&lt;</a>
+		<p class="fl">国内折扣</p>
+		<img src="images/header_app.png" class="fr" style="height: 20px;">
+	</div>
+	<!-- 内容区域 -->
+	<div class="comment">
+		<!-- <div class="comment_title">
+			<p>海天酱油</p>
+			<span>京东商城</span><span>10-25 14:10</span><span>小编烟火/慢慢买</span>
+		</div> -->
+		<div class="comment_si clearfix">
+			<!-- <p class="fl">海天的金标生抽酱油，采用了非转基因大豆以及小麦发酵而成，而自然鲜的口感是有些鲜甜鲜甜的感觉，非常适合用来作为日常炒菜用的调味料，当然也能用作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了解的。</p>
+			<img src="" class="fl"> -->
+		</div>
+		<div class="comment_bi">
+			<!-- <p>目前京东商城移动端售价10.9元，不错的凑单品，刚需可入，规格1.28L。</p>
+			<img src=""> -->
+		</div>
+		<div class="comment_city">
+			<button><a href="#">立即购买</a></button>
+			<img src="images/mmbweixin2.png" style="width: 100%; height: auto;">
+		</div>
+		<div class="comment_more">
+			
+		</div>
+	</div>
+
+	<!-- 底部区域 -->
+	<div class="footer">
+		<div class="row">
+			<div><a href="#">登录</a></div>
+			<div><a href="#">注册</a></div>
+			<div><a href="#">返回顶部</a></div>
+		</div>
+		<p><a href="#">手机APP下载</a><a href="#">慢慢买手机版---掌上比价平台</a></p>
+		<p>m.manmanbuy.com</p>
+	</div>
+	<script type="text/html" id="moneyproducttitleTmp">
+		{{each result as value i}}
+			<div class="comment_title">
+				<p>{{value.productName}}</p>
+				<span>{{value.productFrom}}</span><span>{{value.productTime}}</span><span>{{value.productTips}}</span>
+			</div>
+		{{/each}}
+	</script>
+	<script type="text/html" id="comment_siTmp">
+		{{each result as value i}}
+			<p class="fl">{{value.productInfo}}</p>
+			{{#value.productImgSm}}
+		{{/each}}
+	</script>
+	<script type="text/html" id="comment_biTmp">
+		{{each result as value i}}
+			<p>{{value.productInfo1}}</p>
+			{{#value.productImgLg}}
+		{{/each}}
+	</script>
+	<script type="text/html" id="comment_cityTmp">
+		{{each result as value i}}
+			{{#value.productCity}}
+		{{/each}}
+	</script>
+	<script type="text/html" id="comment_moreTmp">
+		{{each result as value i}}
+			{{#value.productComment}}
+		{{/each}}
+	</script>
+	<script type="text/html" id="inlanddiscountTitleTmp">
+		{{each result as value i}}
+			<div class="comment_title">
+				<p>{{value.productName}}</p>
+				<p style="color:red;font:bold 14px '微软雅黑'">{{value.productPrice}}</p>
+				<span>{{value.productFrom}}</span><span>{{value.productTime}}</span><span>{{value.productTips}}</span>
+			</div>
+		{{/each}}
+	</script>
+	<script type="text/html" id="inlanddiscount_biTmp">
+		{{each result as value i}}
+			<p>{{value.productInfo}}</p>
+			{{#value.productImg}}
+		{{/each}}
+	</script>
+	<script type="text/html" id="inlanddiscount_moreTmp">
+		{{each result as value i}}
+			{{#value.productComment}}
+		{{/each}}
+	</script>
+	<script src="js/moneyproduct.js"></script>
+</body>
+</html>

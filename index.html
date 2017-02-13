@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="lib/fixScreen.js"></script>
+	<script src="lib/template.js"></script>
+	<script src="lib/jquery/jquery.js"></script>
+	<title>index</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+	<!-- 头部区域 -->
+	<div class="header">
+		<img src="images/header_logo.png" class="fl">
+		<img src="images/header_app.png" class="fr" style="height: 20px;">
+	</div>
+	<!-- 搜索区域 -->
+	<div class="search">
+		<form action="#" class="fl">
+            <input type="search" placeholder="请输入要比价的商品"/>
+        </form>
+        <a href="#" class="login fr">搜索</a>
+	</div>
+	<!-- 菜单区域 -->
+	<div class="menu clearfix" id="menu">
+		<!-- <ul >
+			<li><a href="#"><img src="images/ic_search.png"><p>比价搜索</p></a></li>
+			<li><a href="#"><img src="images/ic_cu.png"><p>省钱控</p></a></li>
+			<li><a href="#"><img src="images/ic_coudanpin.png"><p>国内折扣</p></a></li>
+			<li><a href="#"><img src="images/ic_bcj.png"><p>白菜价</p></a></li>
+			<li><a href="#"><img src="images/haitao.png"><p>海淘折扣</p></a></li>
+			<li><a href="#"><img src="images/ic_temai.png"><p>优惠券</p></a></li>
+			<li><a href="#"><img src="images/ic_trend.png"><p>查历史价</p></a></li>
+			<li><a href="#"><img src="images/gengduo.png"><p>更多</p></a></li>
+			<li><a href="#"><img src="images/ic_coudanpin.png"><p>凑单品</p></a></li>
+			<li><a href="#"><img src="images/ic_kb.png"><p>口碑排行</p></a></li>
+			<li><a href="#"><img src="images/ic_mall.png"><p>商城导航</p></a></li>
+			<li><a href="#"><img src="images/ic_pp.png"><p>品牌大全</p></a></li>
+		</ul> -->
+	</div>
+	<!-- 折扣推荐 -->
+	<div class="recommen" id="recommen">
+		<div class="recommen_title"><h5>超值折扣推荐</h5><img src="images/header_app.png" class="fr"></div>
+		<div class="recommen_list">
+			<!-- <div class="media">
+				<a href="#" class="media_a fl">
+					<img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="酱油" class="media_img">
+				</a>
+				<div class="media_inf fr">
+					<p>移动端凑单品：海天 鲜味 生抽 1.28L</p>
+					<p class="color">10.9元</p>
+					<span>京东商城|10-25 14:10</span>
+				</div>
+			</div>
+			<div class="media">
+				<a href="#" class="media_a fl">
+					<img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="酱油" class="media_img">
+				</a>
+				<div class="media_inf fr">
+					<p>移动端凑单品：海天 鲜味 生抽 1.28L</p>
+					<p class="color">10.9元</p>
+					<span>京东商城|10-25 14:10</span>
+				</div>
+			</div> -->
+		</div>
+		<div class="recommen_more"><a href="#">更多优惠信息>></a></div>
+		<div class="recommen_title"><h5>品牌排行</h5><img src="images/header_app.png" class="fr"></div>
+	</div>
+	<!-- 底部区域 -->
+	<div class="footer">
+		<div class="row">
+			<div><a href="#">登录</a></div>
+			<div><a href="#">注册</a></div>
+			<div><a href="#">返回顶部</a></div>
+		</div>
+		<p><a href="#">手机APP下载</a><a href="#">慢慢买手机版---掌上比价平台</a></p>
+		<p>m.manmanbuy.com</p>
+	</div>
+<!-- 模板引擎 -->
+<script type="text/html" id="menuTmp">
+	<ul>
+		{{each result as value i}}
+		<li>
+			<a href="{{value.titlehref}}">
+				{{#value.img}}
+				<p>{{value.name}}</p>
+			</a>
+		</li>
+		{{/each}}	
+	</ul>
+</script>
+<script type="text/html" id="recommenTmp">
+	{{each result as value i}}
+	<div class="media">
+		<a href="moneyproduct.html?productid={{value.productId}}" class="media_a fl">
+			{{#value.productImgSm}}
+		</a>
+		<div class="media_inf fr">
+			<p>{{value.productName}}</p>
+			<p>{{value.productPinkage}}</p>
+			<span>{{value.productFrom}} | {{value.productTime}}</span>
+		</div>
+	</div>
+	{{/each}}
+</script>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>baicaijia</title>
+	<script src="lib/fixScreen.js"></script>
+	<script src="lib/template.js"></script>
+	<script src="lib/jquery/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/baicaijia.css">
+</head>
+<body>
+	<!-- 头部区域 -->
+	<div class="header">
+		<a href="index.html" class="fl">&lt;</a>
+		<p class="fl">白菜价-淘宝内部券</p>
+		<img src="images/header_app.png" class="fr" style="height: 30px;">
+	</div>
+	<div class="nav">
+		<!-- <ul class="clearfix">                     
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+			<li><a href="#">全部</a></li>
+		</ul> -->
+	</div>
+	<div class="comment">
+		<!-- <div class="media">			
+			<div class="fl">
+					<img src="http://seller.manmanbuy.com/ProPic/2016100009230957088.jpg" >
+			</div>				
+			<div class="fl">
+				<p>[包邮]双十一红包 今日开启</p>
+				<div class="bar clearfix">
+					<p><i>券后</i><em>¥</em>10.0<del>¥25</del></p>
+					<a href="http://shop.m.taobao.com/shop/coupon.htm?seller_id=2213057944&activity_id=8cfb336284b5436b9f2c7c9343fa85f1" class="goquan" target="_blank"></a>
+					<i class="spec"><em style="width:75%;"></em><span>75%</span></i>
+					<b>已领75117张</b>				
+				</div>
+				<a href="http://shop.m.taobao.com/shop/coupon.htm?seller_id=2213057944&activity_id=8cfb336284b5436b9f2c7c9343fa85f1" target="_blank" class="fl">点此领10元优惠券</a><a biz-itemid="56297410_8818824_54778388" isconvert="1" href="http://s.click.taobao.com/3HlIdQx" target="_blank" class="fr">下单链接</a>
+			</div>		
+		</div>	 -->
+	</div>
+	<!-- 底部区域 -->
+	<div class="footer">
+		<div class="row">
+			<div><a href="#">登录</a></div>
+			<div><a href="#">注册</a></div>
+			<div><a href="#">返回顶部</a></div>
+		</div>
+		<p><a href="#">手机APP下载</a><a href="#">慢慢买手机版---掌上比价平台</a></p>
+		<p>m.manmanbuy.com</p>
+	</div>
+	<script type="text/html" id="navTmp">
+		<ul class="clearfix">                     
+			{{each result as value i}}
+				<li><a href="baicaijia.html?titleid={{value.titleId}}">{{value.title}}</a></li>
+			{{/each}}
+		</ul>
+	</script>
+	<script type="text/html" id="commentTmp">
+	{{each result as value i}}
+		<div class="media">			
+			<div class="fl">{{#value.productImg}}</div>				
+			<div class="fl">
+				<p>{{#value.productName}}</p>
+				<p>{{#value.productPrice}}</p>
+				{{#value.productCouponRemain}}
+				{{#value.productCoupon}}
+				{{#value.productHref}}
+			</div>		
+		</div>	
+	{{/each}}
+	</script>
+	<script src="js/baicaijia.js"></script>
+</body>
+</html>

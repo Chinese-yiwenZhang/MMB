@@ -1,0 +1,147 @@
+.detailed_title{
+	height: 35px;
+	background-color: #F5F5F5;
+}
+.detailed_title a{
+	float:left;
+	margin:0 0 0 17px;
+	color:black;
+	font:14px/35px "微软雅黑";
+}
+.detailed_title button{
+	height: 30px;
+	width: 60px;
+	margin: 3px 10px 0 0;
+	background-color: white;
+	border:1px solid #CCC;
+}
+.detailed_info{
+
+}
+.detailed_info .img p{
+	margin:15px;
+	text-align: center;
+	font:18px "微软雅黑";
+}
+.detailed_info img{
+	display:block;
+	width: 170px;
+	margin:0 auto;
+}
+.detailed_info .img a{
+	display:block;
+	float:right;
+	height: 39px;
+	width: 39px;
+	margin-right: 20px;
+	margin-top: -50px;
+}
+.detailed_info .img a img{
+	display:block;
+	height: 39px;
+	width: 39px;
+}
+.bijia_title li{
+	float:left;
+	width: 33.33%;
+	height: 30px;
+	color:white;
+	text-align:center;
+	border-top:1px solid black;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	font:14px/30px "微软雅黑";
+}
+.bijia_title li:nth-child(1){
+	background-color: #FF9B1A;
+}
+.bijia_title li:nth-child(2){
+	background-color: #FFC21D;
+}
+.bijia_title li:nth-child(3){
+	background-color: #FFCC41;
+}
+
+.bijia_price img{
+	float:left;
+	width: 16px;
+	height: 16px;
+	margin-top: 7px;
+	margin-left: 10px;
+}
+.bijia_price span{
+	float:left;
+	line-height: 30px;
+	margin-left: 10px;
+}
+.bijia_price b{
+	float:right;
+	margin-right:10px;
+	font:14px/30px "微软雅黑";
+}
+.bijia_price a{
+	float:right;
+	color:white;
+	width: 60px;
+	height: 20px;
+	margin-top: 5px;
+	margin-right: 5px;
+	text-align:center;
+	font:12px/20px "微软雅黑";
+	background-color: red;
+}
+.bijia_info{
+	border-top:1px solid #CECECE;
+}
+.bijia_info p{
+	text-align:left;
+	font:12px "微软雅黑";
+	color:#B7B7B7;
+}
+.comment_title{
+	height: 30px;
+	background-color: #DBDBDB;
+	text-align:center;
+	font:14px/30px "微软雅黑";
+}
+.comment .comment_info{
+	border-bottom: 1px solid #DBDBDB;
+}
+.comment .comment_info span{
+	width: 50%;
+	margin-top: 10px;
+	box-sizing: border-box;
+	color:#667DB7;
+}
+.comment .comment_info span:nth-child(1){
+	margin-left: -28px;
+}
+.comment .comment_info span:nth-child(2){
+	text-align:right;
+	padding-right: 10px;
+}
+
+.comment .comment_info p:nth-child(3){
+	font:12px "微软雅黑";
+	color:#667DB7;
+	padding-right: 10px;
+}
+.comment .comment_info p:nth-child(4){
+	font:14px "微软雅黑";
+	text-indent: 2em;
+	text-align: left;
+}
+.comment_more button{
+	display:block;
+	width: 80%;
+	margin:10px auto;
+	border:1px solid #DBDBDB;
+	background-color: #DDD;
+	border-radius: 10px;
+}
+.comment_more button a{
+	display:block;
+	width: 100%;
+	color:black;
+	font:14px "微软雅黑";
+}

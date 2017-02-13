@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>category</title>
+	<script src="lib/fixScreen.js"></script>
+	<script src="lib/template.js"></script>
+	<script src="lib/jquery/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+	<!-- 头部区域 -->
+	<div class="header">
+		<img src="images/header_logo.png" class="fl">
+		<img src="images/header_app.png" class="fr" style="height: 20px;">
+	</div>
+	<!-- 搜索区域 -->
+	<div class="search">
+		<form action="#" class="fl">
+            <input type="search" placeholder="请输入要比价的商品"/>
+        </form>
+        <a href="#" class="login fr">搜索</a>
+	</div>
+	<!-- 分类区域 -->
+	<div class="category clearfix" id="category"> 
+		<!-- <ul>
+			<li>
+				<h4>大家电<span class="fr">&gt;</span></h4>
+				<div class="row"> 
+					<ul class="clearfix">
+						<li><a href="#">电视</a></li>
+						<li><a href="#">空调</a></li>
+						<li><a href="#">影院</a></li>
+						<li><a href="#">冰箱</a></li>
+					</ul>
+				</div>
+			</li>
+			
+		</ul> -->
+	</div>
+	<!-- 底部区域 -->
+	<div class="footer">
+		<div class="row">
+			<div><a href="#">登录</a></div>
+			<div><a href="#">注册</a></div>
+			<div><a href="#">返回顶部</a></div>
+		</div>
+		<p><a href="#">手机APP下载</a><a href="#">慢慢买手机版---掌上比价平台</a></p>
+		<p>m.manmanbuy.com</p>
+	</div>
+	<script type="text/html" id="categoryTitleTmp">
+		<ul>
+		{{each result as value i}}
+		<li>
+			<h4>{{value.title}}<span class="fr">&gt;</span></h4>
+			<div class="row">
+			<ul class="clearfix"></ul>
+			</div>		
+		</li>
+		{{/each}}
+		</ul>
+	</script>
+	<script type="text/html" id="categoryTmp">
+		{{each result as value i}}
+		<li><a href="productlist.html?categoryid={{value.categoryId}}&category={{value.category}}">{{value.category}}</a></li>
+		{{/each}}
+	</script>
+	<script src="js/category.js"></script>
+	
+</body>
+</html>

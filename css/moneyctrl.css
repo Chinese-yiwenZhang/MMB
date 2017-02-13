@@ -1,0 +1,67 @@
+.header a{
+	color:white;
+	margin-left: 5%;
+	font:bold 18px/50px "微软雅黑";
+}
+.header p{
+	margin-left: 25%;
+	color:white;
+	font:bold 16px/50px "微软雅黑";
+}
+.productlist_list .media{
+	/* height: 150px; */
+	border-bottom: 1px solid #CCC;
+	padding:10px;
+	width: 100%;
+}
+.media .left{
+	margin-right: 20px;
+
+}
+.media img{
+	width: 100px;
+	height: 100px;
+}
+.media .right{
+	width: 60%;
+}
+.media p{
+	color:red;
+	font: 14px "微软雅黑";
+	margin-top: 7px;
+}
+.media a{
+	color:black;
+	font: 14px "微软雅黑";
+}
+.media span{
+	display:inline-block;
+	color:#666A6F;
+	font: 12px "微软雅黑";
+	margin-top: 7px;
+	margin-right: 7px;
+}
+.productlist_footer{
+	height: 40px;
+}
+.productlist_footer a{
+	display:inline-block;
+	border:1px solid #CCC; 
+	padding:2px 10px;
+	font:14px "微软雅黑";
+	color:black;
+	margin: 9px;
+	height: 30px;
+	width: 70px;
+}
+.productlist_footer .two{
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left:50%;
+	margin-left: -35px;
+	margin-top: 10px;
+}
+.productlist_footer .three{
+	float:right;
+}

@@ -1,0 +1,33 @@
+.product .media{
+	border-right:1px solid #EEE;
+	border-bottom:1px solid #EEE;
+	width: 50%;
+	box-sizing: border-box;
+	float:left;
+	margin-top:0px;
+}
+.product .media .media_info{
+	height: 260px;
+}
+.product .media a{
+	display:block;
+	width: 100%;
+}
+.product .media img{
+	width: 140px;
+	height: 140px;
+	margin:10px;
+}
+.product .media p{
+	font:12px "微软雅黑";
+	color:black;
+	margin-left: 10px;
+}
+.product .media p:nth-child(3){
+	color:red;
+}
+.product .media span{
+	font:12px "微软雅黑";
+	color:#A1A1A1;
+	margin-left: 10px;
+}

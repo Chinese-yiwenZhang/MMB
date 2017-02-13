@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>productlist</title>
+	<script src="lib/fixScreen.js"></script>
+	<script src="lib/template.js"></script>
+	<script src="lib/jquery/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/productlist.css">
+</head>
+<body>
+	<!-- 头部区域 -->
+	<div class="header">
+		<img src="images/header_logo.png" class="fl">
+		<img src="images/header_app.png" class="fr" style="height: 20px;">
+	</div>
+	<!-- 搜索区域 -->
+	<div class="search">
+		<form action="#" class="fl">
+            <input type="search" placeholder="请输入要比价的商品"/>
+        </form>
+        <a href="#" class="login fr">搜索</a>
+	</div>
+	<!-- 商品列表 -->
+	<div class="productlist">
+		<!-- <div class="productlist_title">
+			<a href="index.html">首页&gt;</a>
+			<a href="category.html">全部分类&gt;</a>
+			<a href="#">电视&gt;</a>
+			<button class="fr">筛选</button>
+		</div>
+		<div class="productlist_list">
+			<div class="media">
+				<div class="left fl"><img src="images/gengduo.png"></div>
+				<div class="right fl"><p><a href="#">乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</a></p><p>￥1999.00</p><span>报价(6)</span><span>评论(2286)</span></div>
+			</div>
+		</div> -->
+		<!-- <div class="productlist_footer">
+			<a href="#" class="one">上一页</a>
+			<a href="#" class="two">第1页&gt;</a>
+			<a href="#" class="three">下一页</a>
+		</div> -->
+	</div>
+	<!-- 底部区域 -->
+	<div class="footer">
+		<div class="row">
+			<div><a href="#">登录</a></div>
+			<div><a href="#">注册</a></div>
+			<div><a href="#">返回顶部</a></div>
+		</div>
+		<p><a href="#">手机APP下载</a><a href="#">慢慢买手机版---掌上比价平台</a></p>
+		<p>m.manmanbuy.com</p>
+	</div>
+	<script type="text/html" id="productlistTitleTmp">
+		{{each result as value i}}
+		<div class="productlist_title">
+			<a href="index.html">首页&gt;</a>
+			<a href="category.html">全部分类&gt;</a>
+			<a href="#">{{value.category}}&gt;</a>
+			<button class="fr">筛选</button>
+		</div>
+		{{/each}}
+	</script>
+	<script type="text/html" id="productlistTmp">	
+		<div class="productlist_list">
+		{{each result as value i}}
+			<div class="media">
+				<div class="left fl">{{#value.productImg}}</div>
+				<div class="right fl"><p><a href="bijia.html?productid={{value.productId}}">{{value.productName}}</a></p><p>{{value.productPrice}}</p><span>{{value.productQuote}}</span><span>{{value.productCom}}</span></div>
+			</div>
+		{{/each}}		
+		</div>
+		<div class="productlist_footer">		
+			<a href="#" class="one">上一页</a>
+			<select class="two">				
+			</select>
+			<a class="three">下一页</a>			
+		</div>
+	</script>
+	<script src="js/productlist.js"></script>
+</body>
+</html>
